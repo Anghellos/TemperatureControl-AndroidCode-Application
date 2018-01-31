@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aggelos.tempcontrol.TempControl.Dashboard"
+    android:background="@drawable/menu_background">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        style="@style/RelativeLayout"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/temp_card"
+            style="@style/Card"
+            android:layout_below="@id/switcher">
+
+            <RelativeLayout
+                android:id="@+id/first_card_layout"
+                style="@style/RelativeLayout"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/in_lbl"
+                    style="@style/HeaderTxt"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="80dp"
+                    android:textSize = "25sp"
+                    android:text="In"/>
+
+                <TextView
+                    android:id="@+id/in_temp_lbl"
+                    style="@style/TempTxt"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="0.0"/>
+
+                <View
+                    style="@style/Divider"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/out_lbl"
+                    style="@style/HeaderTxt"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="70dp"
+                    android:textSize = "25sp"
+                    android:textColor="@color/colorOutTemp"
+                    android:text="Out"/>
+
+                <TextView
+                    android:id="@+id/out_temp_lbl"
+                    style="@style/TempTxt"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorOutTemp"
+                    android:text="0.0"/>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/dashboard_chart_btn"
+        style="@style/FloatNormalBtn"
+        app:fabSize="normal"
+        app:backgroundTint="@color/colorPurple"
+        android:src="@drawable/ic_btn_chart"/>
+</FrameLayout>

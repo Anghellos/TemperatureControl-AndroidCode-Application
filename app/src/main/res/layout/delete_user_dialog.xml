@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorCard">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/first_layout"
+        style="@style/RelativeLayout"
+        android:paddingTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/Delete_user_lbl"
+            style="@style/HeaderTxt"
+            android:text="Delete User" />
+
+        <TextView
+            android:id="@+id/Delete_user_message_lbl"
+            android:layout_below="@id/Delete_user_lbl"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            style="@style/NormalTxt"
+            android:text="@string/selete_user_message" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/first_layout"
+        style="@style/RelativeLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/delete_user_cancel_btn"
+            style="@style/CornerBnt"
+            android:layout_alignParentLeft = "true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/cancel"
+            android:background="@color/colorGreen"/>
+
+        <Button
+            android:id="@+id/delete_user_delete_btn"
+            style="@style/CornerBnt"
+            android:layout_alignParentRight = "true"
+            android:layout_marginRight="20dp"
+            android:text="@string/delete"
+            android:background="@color/colorRed"/>
+    </RelativeLayout>
+</RelativeLayout>

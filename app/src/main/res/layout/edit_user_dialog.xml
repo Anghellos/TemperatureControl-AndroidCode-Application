@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorCard">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/first_layout"
+        style="@style/RelativeLayout"
+        android:paddingTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/edit_user_lbl"
+            style="@style/HeaderTxt"
+            android:text="Edit User" />
+
+        <EditText
+            android:id="@+id/edit_user_txt"
+            android:layout_below="@id/edit_user_lbl"
+            style="@style/EditBox"
+            android:layout_width="300dp"
+            android:text=""/>
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/first_layout"
+        style="@style/RelativeLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/edit_user_cancel_btn"
+            style="@style/CornerBnt"
+            android:layout_alignParentLeft = "true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/cancel"
+            android:background="@color/colorRed"/>
+
+        <Button
+            android:id="@+id/edit_user_save_btn"
+            style="@style/CornerBnt"
+            android:layout_alignParentRight = "true"
+            android:layout_marginRight="20dp"
+            android:text="@string/save"
+            android:background="@color/colorGreen"/>
+    </RelativeLayout>
+</RelativeLayout>

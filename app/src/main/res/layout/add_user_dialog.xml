@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorCard">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/first_layout"
+        style="@style/RelativeLayout"
+        android:paddingTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/add_user_lbl"
+            style="@style/HeaderTxt"
+            android:text="Add User" />
+
+        <EditText
+            android:id="@+id/add_user_txt"
+            android:layout_below="@id/add_user_lbl"
+            style="@style/EditBox"
+            android:layout_width="300dp"
+            android:text=""/>
+
+        <EditText
+            android:id="@+id/add_user_temp_txt"
+            android:layout_below="@id/add_user_txt"
+            style="@style/EditBox"
+            android:textSize="23dp"
+
+            android:focusable="false"
+            android:layout_width="70dp"
+            android:text="15 °C"/>
+
+        <SeekBar
+            android:id="@+id/add_user_seekBar"
+            android:layout_below="@id/add_user_temp_txt"
+            style="@style/SeekBar" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/second_layout"
+        android:layout_below="@id/first_layout"
+        style="@style/RelativeLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/add_user_cancel_btn"
+            style="@style/CornerBnt"
+            android:layout_alignParentLeft = "true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/cancel"
+            android:background="@color/colorRed"/>
+
+        <Button
+            android:id="@+id/add_user_create_btn"
+            style="@style/CornerBnt"
+            android:layout_alignParentRight = "true"
+            android:layout_marginRight="20dp"
+            android:text="@string/create"
+            android:background="@color/colorGreen"/>
+    </RelativeLayout>
+</RelativeLayout>

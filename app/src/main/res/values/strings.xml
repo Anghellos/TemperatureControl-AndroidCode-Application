@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TempControl</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="temp_txt">0 °C</string>
+    <string name="margin_btn">20dp</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="delete">Delete</string>
+    <string name="selete_user_message">Do you realy want to delete the selected user?</string>
+    <string name="done">Done</string>
+    <string name="save">Save</string>
+</resources>
